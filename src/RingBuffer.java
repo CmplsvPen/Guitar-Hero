@@ -7,6 +7,7 @@ public class RingBuffer {
     private int writePointer;
     private double[] data;
 
+    // create an empty ring buffer, with given max capacity
     public RingBuffer(int capacity) {
         cap = capacity;
         data = new double[capacity];
@@ -15,6 +16,7 @@ public class RingBuffer {
         writePointer = 0;
     }
 
+    // return number of items currently in the buffer
     public int size() {
         return size;
     }

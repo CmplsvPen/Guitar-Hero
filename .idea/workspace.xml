@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c85bdbed-e269-4d8d-bac5-b8ae7a856960" name="Changes" comment="First Commit">
+    <list default="true" id="c85bdbed-e269-4d8d-bac5-b8ae7a856960" name="Changes" comment="Almost Done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GuitarHero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GuitarHero.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GuitarString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GuitarString.java" afterDir="false" />
@@ -94,7 +94,7 @@
       <workItem from="1668971414597" duration="3770000" />
       <workItem from="1669253045855" duration="54000" />
       <workItem from="1669266778041" duration="113000" />
-      <workItem from="1669654714303" duration="6644000" />
+      <workItem from="1669654714303" duration="8652000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1668927275415</created>
@@ -103,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668927275415</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Almost Done">
+      <created>1669740289869</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1669740289869</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,7 +129,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First Commit" />
+    <MESSAGE value="Almost Done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Almost Done" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
