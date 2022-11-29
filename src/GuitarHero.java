@@ -1,49 +1,35 @@
-import java.util.NoSuchElementException;
-
 public class GuitarHero {
     public static final int KEYS = 37;
 
     public static void main(String[] args){
+        boolean[] plucked = new boolean[KEYS];
         double[] freqs = initFreqs();
-        printFreqs(freqs);
         GuitarString[] guitar = createGuitar(freqs);
         String keyArrangement = "q2we4r5ty7u8i9op-[=zxdcfvgbnjmk,.;/' ";
 
         Keyboard keyboard = new Keyboard();
         while (true) {
-//            System.out.print("going");
             if (keyboard.hasNextKeyPlayed()) {
-                System.out.println("KEY PRESSED");
+//                System.out.println("KEY PRESSED");
 
                 int stringNumber = keyArrangement.indexOf(keyboard.nextKeyPlayed());
-                if (stringNumber < 0) continue;
-
-                guitar[stringNumber].pluck();
-                System.out.println(stringNumber + " plucked!");
+                if (stringNumber > 0) {
+                    plucked[stringNumber] = true;
+                    guitar[stringNumber].pluck();
+                }
             }
-
-//            try {
-                double sample = sumSamples(guitar);
-                StdAudio.play(sample);
-                ticAllStrings(guitar);
-//            }
-//            catch (NoSuchElementException){
-//                System.out.println("NOSUCHELEMENT");
-//            }
+            double sample = sumSamples(guitar, plucked);
+            StdAudio.play(sample);
+            tickPluckedStrings(guitar, plucked);
         }
     }
 
-    private static void printFreqs(double[] freqs) {
-        for (double i: freqs) {
-            System.out.println(i);
-        }
-    }
-
-    //  Linear from 110 to 880 in 37 steps
+    //  Creates and return an array of equal-tempered frequencies at A=440hz
+    //  Range is from 110hz to 880hz
     public static double[] initFreqs(){
         double[] freqs = new double[KEYS];
         for (int i = 0; i < KEYS; i++){
-            freqs[i] = 440 * Math.pow(1.05956, i+24);
+            freqs[i] = 440 * Math.pow(1.05956, i-24);
         }
         return freqs;
     }
@@ -56,17 +42,21 @@ public class GuitarHero {
         return guitar;
     }
 
-    public static double sumSamples(GuitarString[] guitar){
+    public static double sumSamples(GuitarString[] guitar, boolean[] plucked){
         double sum = 0;
         for (int i = 0; i < guitar.length; i++){
-            sum += guitar[i].sample();
+            if (plucked[i]) {
+                sum += guitar[i].sample();
+            }
         }
         return sum;
     }
 
-    public static void ticAllStrings(GuitarString[] guitar){
+    public static void tickPluckedStrings(GuitarString[] guitar, boolean[] plucked){
         for (int i = 0; i < guitar.length; i++){
-            guitar[i].tic();
+            if (plucked[i]) {
+                guitar[i].tic();
+            }
         }
     }
 }

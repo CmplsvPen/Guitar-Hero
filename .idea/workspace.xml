@@ -1,21 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c85bdbed-e269-4d8d-bac5-b8ae7a856960" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Guitar-Hero.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/guitarHeroSampleOutput.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GuitarHero.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GuitarHeroLite.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GuitarString.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Keyboard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/RingBuffer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/RingBufferTester.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StdAudio.java" afterDir="false" />
+    <list default="true" id="c85bdbed-e269-4d8d-bac5-b8ae7a856960" name="Changes" comment="First Commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GuitarHero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GuitarHero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GuitarString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GuitarString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RingBuffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RingBuffer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,17 +33,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Khang/IdeaProjects/Guitar-Hero&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Khang/IdeaProjects/Guitar-Hero",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "project.propDebugger"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Khang\IdeaProjects\Guitar-Hero" />
@@ -64,17 +55,29 @@
       <recent name="C:\Users\Khang\IdeaProjects\Guitar-Hero" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="RingBufferTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="RingBufferTester" />
+  <component name="RunManager" selected="Application.GuitarHero">
+    <configuration name="GuitarHero" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GuitarHero" />
       <module name="Guitar-Hero" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GuitarHeroLite" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GuitarHeroLite" />
+      <module name="Guitar-Hero" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.GuitarHeroLite" />
+      <item itemvalue="Application.GuitarHero" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.RingBufferTester" />
+        <item itemvalue="Application.GuitarHero" />
+        <item itemvalue="Application.GuitarHeroLite" />
       </list>
     </recent_temporary>
   </component>
@@ -87,8 +90,20 @@
       <option name="presentableId" value="Default" />
       <updated>1668836090754</updated>
       <workItem from="1668836092293" duration="16430000" />
-      <workItem from="1668922191553" duration="4442000" />
+      <workItem from="1668922191553" duration="4738000" />
+      <workItem from="1668971414597" duration="3770000" />
+      <workItem from="1669253045855" duration="54000" />
+      <workItem from="1669266778041" duration="113000" />
+      <workItem from="1669654714303" duration="6644000" />
     </task>
+    <task id="LOCAL-00001" summary="First Commit">
+      <created>1668927275415</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1668927275415</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -104,6 +119,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="First Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="First Commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

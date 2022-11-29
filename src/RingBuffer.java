@@ -33,46 +33,48 @@ public class RingBuffer {
         if (isFull()) {
             throw new IllegalStateException("Cannot call enqueue on a full RingBuffer.");
         }
-        data[writePointer] = input;
+
+        data[writePointer] += input;
         this.size++;
 
         //  Advance the writePointer
-        if (writePointer == cap - 1) writePointer = 0;
-        else writePointer++;
+        writePointer = (writePointer + 1) % cap;
+
     }
 
     //  Extracts a value from the array where readPointer is
     //  Then advances readPointer and decrements size
     public double dequeue() {
-//        if (isEmpty()) {
-//            throw new NoSuchElementException("Cannot call dequeue on an empty RingBuffer.");
-//        }
+        if (isEmpty()) {
+            throw new NoSuchElementException("Cannot call dequeue on an empty RingBuffer.");
+        }
 
-        double temp = data[readPointer];
+        double result = data[readPointer];
         data[readPointer] = 0;
         size--;
 
         //  Advance the readPointer
-        if (readPointer == cap - 1) readPointer = 0;
-        else readPointer++;
+        readPointer = (readPointer + 1 ) % cap;
 
-        return temp;
+        return result;
     }
 
     //  Returns data[readPointer] without advancing the pointer or deleting the data
     public double peek() {
-//        if (isEmpty()) {
-//            throw new NoSuchElementException("Cannot call peek on an empty RingBuffer.");
-//        }
+        if (isEmpty()) {
+            throw new NoSuchElementException("Cannot call peek on an empty RingBuffer.");
+        }
         return data[readPointer];
     }
 
     //  Format: [readPointer, next, next, next...]
-    //  Size of toString depends on size, not cap
+    //  Size of toString depends on amount of stored data, not max capacity
     public String toString() {
         String result = "[";
+
         for (int i = 0; i < size; i++) {
             int toStringPointer = (readPointer + i) % cap;
+            //  Fixing the fencepost
             if (i == size - 1) {
                 result += data[toStringPointer];
             } else {
