@@ -1,7 +1,6 @@
 public class GuitarString {
     private static final double ENERGY_DECAY_FACTOR = 0.994;
     private final int DEFAULT_SAMPLING_RATE = 44100;
-    private boolean plucked;
     private int impulseSamples;
     private RingBuffer rb;
     private int time;
